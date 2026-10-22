@@ -207,24 +207,18 @@ svg { display: block; }
     box-shadow: var(--shadow-xl);
 }
 
-.avatar-edit {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 32px;
-    height: 32px;
-    background: var(--color-primary);
-    color: white;
+
+.avatar-wrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.25rem;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 0.75rem;
-    font-weight: 600;
-    border: 3px solid var(--color-bg-sidebar);
-    transition: background-color var(--transition-fast), transform var(--transition-fast);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: box-shadow var(--transition-base);
 }
+
 
 .avatar-edit:hover {
     background: var(--color-primary-dark);
