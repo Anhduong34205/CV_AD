@@ -16,9 +16,11 @@
         <aside class="sidebar">
             <div class="profile-section">
                <div class="avatar-wrapper">
-    <img src="./images/avatar.png"
-         alt="images/ảnh.png"
-         class="avatar">
+    <img src="./images/ảnh.png"
+         alt="Avatar"
+         class="avatar" id="avatar">
+    <div class="avatar-edit" onclick="document.getElementById('avatarInput').click()">✎</div>
+    <input type="file" id="avatarInput" accept="image/*" style="display: none;" onchange="updateAvatar(this)">
 </div>
                 <h1 class="name" contenteditable="true" style="white-space: nowrap;">Đặng Thị Ánh Dương</h1>
                 <p class="title" contenteditable="true">Fullstack Developer</p>
