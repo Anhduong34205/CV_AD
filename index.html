@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV chuyên nghiệp - Anh Dương">
+    <title>CV - Anh Dương</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="avatar-wrapper">
+                    <img src="https://via.placeholder.com/150" alt="Avatar" class="avatar" id="avatar">
+                    <div class="avatar-edit" onclick="document.getElementById('avatarInput').click()">✎</div>
+                    <input type="file" id="avatarInput" accept="image/*" style="display: none;" onchange="updateAvatar(this)">
+                </div>
+                <h1 class="name" contenteditable="true">Đặng Thị Ánh Dương</h1>
+                <p class="title" contenteditable="true">Fullstack Developer</p>
+                <div class="contact-info">
+                    <a href="mailto:anhduong@example.com" class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <span contenteditable="true">anhduong@example.com</span>
+                    </a>
+                    <a href="tel:+84123456789" class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <span contenteditable="true">+84 862 514 132</span>
+                    </a>
+                    <a href="https://linkedin.com/in/anhduong" target="_blank" class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        <span contenteditable="true">linkedin.com/in/anhduong</span>
+                    </a>
+                    <a href="https://github.com/anhduong" target="_blank" class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span contenteditable="true">github.com/anhduong</span>
+                    </a>
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span contenteditable="true">Thái Nguyên, Việt Nam</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="section-title">Kỹ năng</h2>
+                <div class="skills-list">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag" contenteditable="true">React</span>
+                            <span class="skill-tag" contenteditable="true">TypeScript</span>
+                            <span class="skill-tag" contenteditable="true">Next.js</span>
+                            <span class="skill-tag" contenteditable="true">Tailwind CSS</span>
+                            <span class="skill-tag" contenteditable="true">Vue.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Backend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag" contenteditable="true">Node.js</span>
+                            <span class="skill-tag" contenteditable="true">Express</span>
+                            <span class="skill-tag" contenteditable="true">NestJS</span>
+                            <span class="skill-tag" contenteditable="true">PostgreSQL</span>
+                            <span class="skill-tag" contenteditable="true">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">DevOps & Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag" contenteditable="true">Docker</span>
+                            <span class="skill-tag" contenteditable="true">Kubernetes</span>
+                            <span class="skill-tag" contenteditable="true">AWS</span>
+                            <span class="skill-tag" contenteditable="true">Git</span>
+                            <span class="skill-tag" contenteditable="true">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="section-title">Ngôn ngữ</h2>
+                <div class="languages">
+                    <div class="language-item">
+                        <span class="lang-name" contenteditable="true">Tiếng Việt</span>
+                        <div class="lang-level">
+                            <span class="lang-dot filled"></span>
+                            <span class="lang-dot filled"></span>
+                            <span class="lang-dot filled"></span>
+                            <span class="lang-dot filled"></span>
+                            <span class="lang-dot filled"></span>
+                        </div>
+                    </div>
+                    <div class="language-item">
+                        <span class="lang-name" contenteditable="true">English</span>
+                        <div class="lang-level">
+                            <span class="lang-dot filled"></span>
+                            <span class="lang-dot filled"></span>
+                            <span class="lang-dot filled"></span>
+                            <span class="lang-dot filled"></span>
+                            <span class="lang-dot"></span>
+                        </div>
+                    </div>
+                    <div class="language-item">
+                        <span class="lang-name" contenteditable="true">Japanese</span>
+                        <div class="lang-level">
+                            <span class="lang-dot filled"></span>
+                            <span class="lang-dot filled"></span>
+                            <span class="lang-dot"></span>
+                            <span class="lang-dot"></span>
+                            <span class="lang-dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="section-title">Sở thích</h2>
+                <div class="interests">
+                    <span class="interest-tag" contenteditable="true">📚 Đọc sách</span>
+                    <span class="interest-tag" contenteditable="true">🏃 Chạy bộ</span>
+                    <span class="interest-tag" contenteditable="true">🎮 Gaming</span>
+                    <span class="interest-tag" contenteditable="true">✈️ Du lịch</span>
+                    <span class="interest-tag" contenteditable="true">☕ Cà phê</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="section">
+                <h2 class="section-title-main">Giới thiệu</h2>
+                <p class="summary" contenteditable="true">
+                    Lập trình viên Fullstack với 5+ năm kinh nghiệm xây dựng ứng dụng web quy mô lớn.
+                    Chuyên về React, Node.js và các công nghệ cloud. Đam mê viết code sạch, tối ưu hiệu năng
+                    và chia sẻ kiến thức với cộng đồng. Luôn tìm kiếm cơ hội để giải quyết những thách thức
+                    kỹ thuật phức tạp và tạo ra giá trị thực sự cho người dùng.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title-main">Kinh nghiệm làm việc</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="job-title" contenteditable="true">Senior Fullstack Developer</h3>
+                                <span class="company" contenteditable="true">TechCorp Vietnam</span>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="date">01/2022 - Hiện tại</span>
+                                <span class="location">Hà Nội (Hybrid)</span>
+                            </div>
+                            <ul class="job-description" contenteditable="true">
+                                <li>Dẫn dắt team 5 developers xây dựng platform e-commerce phục vụ 100K+ users/day</li>
+                                <li>Tối ưu hiệu năng API giảm 60% response time, tiết kiệm 40% chi phí server</li>
+                                <li>Thiết kế kiến trúc microservices, triển khai CI/CD pipeline với GitHub Actions</li>
+                                <li>Mentor junior developers, tổ chức internal tech sharing hàng tuần</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">AWS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="job-title" contenteditable="true">Fullstack Developer</h3>
+                                <span class="company" contenteditable="true">StartupXYZ</span>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="date">06/2019 - 12/2021</span>
+                                <span class="location">Hà Nội</span>
+                            </div>
+                            <ul class="job-description" contenteditable="true">
+                                <li>Xây dựng từ đầu ứng dụng SaaS quản lý dự án, đạt 10K+ registered users</li>
+                                <li>Phát triển real-time collaboration features sử dụng WebSocket</li>
+                                <li>Implement authentication/authorization với OAuth2, JWT</li>
+                                <li>Tham gia code review, viết unit/integration tests (coverage > 85%)</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">Socket.io</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="job-title" contenteditable="true">Junior Frontend Developer</h3>
+                                <span class="company" contenteditable="true">Digital Agency ABC</span>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="date">01/2018 - 05/2019</span>
+                                <span class="location">Hà Nội</span>
+                            </div>
+                            <ul class="job-description" contenteditable="true">
+                                <li>Phát triển giao diện responsive cho 20+ projects khách hàng</li>
+                                <li>Chuyển đổi design từ Figma/Adobe XD sang pixel-perfect HTML/CSS/JS</li>
+                                <li>Tối ưu Core Web Vitals, cải thiện SEO scores</li>
+                                <li>Học hỏi và áp dụng best practices từ senior developers</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">jQuery</span>
+                                <span class="tech-tag">Sass</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title-main">Dự án nổi bật</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)"></div>
+                        <div class="project-content">
+                            <h3 class="project-title" contenteditable="true">E-Commerce Platform</h3>
+                            <p class="project-desc" contenteditable="true">Nền tảng thương mại điện tử full-feature với giỏ hàng, thanh toán, quản lý đơn hàng, dashboard admin.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">Stripe</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Prisma</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">Live Demo</a>
+                                <a href="#" class="project-link" target="_blank">Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"></div>
+                        <div class="project-content">
+                            <h3 class="project-title" contenteditable="true">TaskFlow - Project Management</h3>
+                            <p class="project-desc" contenteditable="true">Công cụ quản lý dự án real-time với Kanban board, Gantt chart, team collaboration, time tracking.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">Live Demo</a>
+                                <a href="#" class="project-link" target="_blank">Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"></div>
+                        <div class="project-content">
+                            <h3 class="project-title" contenteditable="true">DevBlog - Technical Blog Platform</h3>
+                            <p class="project-desc" contenteditable="true">Platform blog cho developers với Markdown editor, syntax highlighting, SEO optimization, comments.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Astro</span>
+                                <span class="tech-tag">Tailwind</span>
+                                <span class="tech-tag">MDX</span>
+                                <span class="tech-tag">Vercel</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">Live Demo</a>
+                                <a href="#" class="project-link" target="_blank">Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title-main">Giáo dục</h2>
+                <div class="education-list">
+                    <div class="education-item">
+                        <div class="education-icon">🎓</div>
+                        <div class="education-content">
+                            <h3 class="degree" contenteditable="true">Kỹ sư Khoa học Máy tính</h3>
+                            <p class="school" contenteditable="true">Đại học Bách Khoa Hà Nội</p>
+                            <div class="education-meta">
+                                <span class="date">2014 - 2018</span>
+                                <span class="grade" contenteditable="true">GPA: 3.6/4.0</span>
+                            </div>
+                            <p class="education-desc" contenteditable="true">Đặc biệt: Phát triển phần mềm, Cấu trúc dữ liệu & Giải thuật, Cơ sở dữ liệu, Mạng máy tính</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title-main">Chứng chỉ & Giải thưởng</h2>
+                <div class="certificates">
+                    <div class="cert-item">
+                        <div class="cert-icon">☁️</div>
+                        <div class="cert-content">
+                            <h4 contenteditable="true">AWS Certified Solutions Architect - Associate</h4>
+                            <p contenteditable="true">Amazon Web Services • 2023</p>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-icon">🎯</div>
+                        <div class="cert-content">
+                            <h4 contenteditable="true">Professional Scrum Master I (PSM I)</h4>
+                            <p contenteditable="true">Scrum.org • 2022</p>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-icon">🏆</div>
+                        <div class="cert-content">
+                            <h4 contenteditable="true">Top 10 - Vietnam Hackathon 2021</h4>
+                            <p contenteditable="true">Đề tài: AI-powered Code Review Assistant</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Avatar update functionality
+        function updateAvatar(input) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('avatar').src = e.target.result;
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add keyboard navigation for contenteditable
+        document.querySelectorAll('[contenteditable="true"]').forEach(el => {
+            el.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    document.execCommand('insertLineBreak');
+                }
+            });
+        });
+
+        // Print / Save as PDF
+        function printCV() {
+            window.print();
+        }
+
+        // Add print button functionality (Ctrl+P)
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'p') {
+                e.preventDefault();
+                printCV();
+            }
+        });
+    </script>
+</body>
+</html>
